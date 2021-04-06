@@ -1,23 +1,24 @@
-package entities.menuOP;
+package entities.menuOperations;
 
 import entities.productData;
-import entities.storage;
 
 import java.util.HashMap;
 
-public class Op2 {
+public class operation2 {
+
+    public static HashMap<Integer, productData> allProducts = new HashMap<>();
+
 
     productData data = new productData();
-    storage store = new storage();
 
     public static HashMap<Integer, productData> listing() {
-        return storage.allProducts;
+        return allProducts;
     }
     public static void printProducts() {
 
         for(Integer key : listing().keySet()) {
-            storage.allProducts.get(key);
-            System.out.println(storage.allProducts);
+            allProducts.get(key);
+            System.out.println(allProducts);
             System.out.println();
         }
     }

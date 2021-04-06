@@ -1,4 +1,4 @@
-package entities.menuOP;
+package entities.menuOperations;
 
 import entities.menu;
 import entities.productData;
@@ -6,7 +6,7 @@ import entities.productData;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class Op1 {
+public class operation1 {
 
     public static void addProduct(){
     Scanner sc = new Scanner(System.in);
@@ -75,6 +75,7 @@ public class Op1 {
         System.out.println("Please enter the product's category");
         data.setCategory(sc.nextLine());
 
+        operation2.allProducts.put(data.getCode(), data);
 
     }
 

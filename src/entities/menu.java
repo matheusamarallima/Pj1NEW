@@ -1,7 +1,7 @@
 package entities;
 
-import entities.menuOP.Op1;
-import entities.menuOP.Op2;
+import entities.menuOperations.operation1;
+import entities.menuOperations.operation2;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
@@ -35,13 +35,13 @@ public class menu {
 
             switch(option) {
                 case 1:
-                    Op1 add = new Op1();
-                    Op1.addProduct();
+                    operation1 add = new operation1();
+                    operation1.addProduct();
                     mainMenu();//dps chamar o menu
                     break;
                 case 2:
-                    Op2 list = new Op2();
-                    Op2.printProducts();
+                    operation2 list = new operation2();
+                    operation2.printProducts();
                     mainMenu();
                     break;
                 default:
