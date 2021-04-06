@@ -4,7 +4,7 @@ import entities.productData;
 
 import java.util.HashMap;
 
-public class operation2 {
+public class Operation2 {
 
     public static HashMap<Integer, productData> allProducts = new HashMap<>();
 

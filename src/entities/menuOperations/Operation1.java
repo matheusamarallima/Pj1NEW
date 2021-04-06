@@ -6,7 +6,7 @@ import entities.productData;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class operation1 {
+public class Operation1 {
 
     public static void addProduct(){
     Scanner sc = new Scanner(System.in);
@@ -16,7 +16,6 @@ public class operation1 {
         System.out.println("You choosed to add a new product to the list");
         System.out.println("______________________________________________");
         System.out.println("Please enter the product code");
-
 
         try {
             data.setCode(Integer.parseInt(sc.nextLine()));
@@ -69,13 +68,12 @@ public class operation1 {
             System.out.println("Please, enter only numbers");
             menu.mainMenu();
         }
-        /********************************************************************/
 
         System.out.println("______________________________________________");
         System.out.println("Please enter the product's category");
         data.setCategory(sc.nextLine());
 
-        operation2.allProducts.put(data.getCode(), data);
+        Operation2.allProducts.put(data.getCode(), data);
 
     }
 

@@ -1,17 +1,20 @@
 package entities;
 
-import entities.menuOperations.operation1;
-import entities.menuOperations.operation2;
+import entities.menuOperations.Operation1;
+import entities.menuOperations.Operation2;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+import static entities.menuOperations.Operation3.googleSearch;
+
 public class menu {
     public static Scanner sc = new Scanner(System.in);
+
     public static void mainMenu() {
 
         /*Here we are going to present the menu to the user,
-         *  that should use the console to add */
+         *  that should use the console to add products */
 
         int option = 0;
 
@@ -35,13 +38,17 @@ public class menu {
 
             switch(option) {
                 case 1:
-                    operation1 add = new operation1();
-                    operation1.addProduct();
+                    Operation1 add = new Operation1();
+                    Operation1.addProduct();
                     mainMenu();//dps chamar o menu
                     break;
                 case 2:
-                    operation2 list = new operation2();
-                    operation2.printProducts();
+                    Operation2 list = new Operation2();
+                    Operation2.printProducts();
+                    mainMenu();
+                    break;
+                case 3:
+                    googleSearch();
                     mainMenu();
                     break;
                 default:
