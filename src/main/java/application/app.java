@@ -1,6 +1,6 @@
-package application;
+package main.java.application;
 
-import entities.menu;
+import main.java.entities.menu;
 
 public class app {
     public static void main(String[] args) {

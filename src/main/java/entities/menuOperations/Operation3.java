@@ -1,10 +1,10 @@
-package entities.menuOperations;
+package main.java.entities.menuOperations;
 
-import entities.productData;
+import main.java.entities.productData;
 
 import java.util.Scanner;
 
-import static entities.menu.mainMenu;
+import static main.java.entities.menu.mainMenu;
 
 public class Operation3 {
 

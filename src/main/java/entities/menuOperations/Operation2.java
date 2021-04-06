@@ -1,6 +1,6 @@
-package entities.menuOperations;
+package main.java.entities.menuOperations;
 
-import entities.productData;
+import main.java.entities.productData;
 
 import java.util.HashMap;
 

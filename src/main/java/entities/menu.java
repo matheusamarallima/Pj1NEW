@@ -1,12 +1,12 @@
-package entities;
+package main.java.entities;
 
-import entities.menuOperations.Operation1;
-import entities.menuOperations.Operation2;
+import main.java.entities.menuOperations.Operation1;
+import main.java.entities.menuOperations.Operation2;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-import static entities.menuOperations.Operation3.googleSearch;
+import static main.java.entities.menuOperations.Operation3.googleSearch;
 
 public class menu {
     public static Scanner sc = new Scanner(System.in);
@@ -40,7 +40,7 @@ public class menu {
                 case 1:
                     Operation1 add = new Operation1();
                     Operation1.addProduct();
-                    mainMenu();//dps chamar o menu
+                    mainMenu();
                     break;
                 case 2:
                     Operation2 list = new Operation2();
