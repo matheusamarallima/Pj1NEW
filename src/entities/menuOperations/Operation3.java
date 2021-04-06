@@ -29,7 +29,7 @@ public class Operation3 {
             if (store1.getName().equals(search)) {
                 System.out.println("The name of the product is: " + store1.getName() +
                         " and the price is: " + store1.getPrice()
-                        + " and its described as: : " + store1.getDescription());
+                        + " and its described as: " + store1.getDescription());
                 System.out.println();
             } else {
                 System.err.println("The selected product doesn't exist");

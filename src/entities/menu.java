@@ -51,13 +51,29 @@ public class menu {
                     googleSearch();
                     mainMenu();
                     break;
+                case 0:
+                    exit();
+                    break;
                 default:
                     System.out.println("Invalid");
 
             }
 
+
+
+
         }while(option != 0);
     }
 
+
+    public static void exit() {
+
+        /*This method is a simple exit way*/
+
+        System.out.println("Goodbye");
+    }
+
+
 }
+
 
